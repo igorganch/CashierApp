@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage"
+             Title="Cashier App">
+
+  <StackLayout>
+        <!-- Place new controls here -->
+
+
+    <Grid Margin="10,10,10,0" >
+      <Label x:Name ="type" Text="Type"
+     FontSize="20" HorizontalTextAlignment="Start"/>
+
+      <Button Clicked ="Manager_Clicked" FontSize="14" Text="Manager" BackgroundColor="Red"  WidthRequest="100" HeightRequest="40"
+       HorizontalOptions="End">
+      </Button>
+    </Grid>
+
+    <Grid x:Name="container" Padding ="0,0,0,0" RowSpacing ="0" ColumnSpacing="0"  >
+            <Button  Grid.Row ="0" Grid.Column="0" Text="1" WidthRequest="64" HeightRequest="50" 
+            HorizontalOptions="Center" Clicked="Number_Clicked"></Button>
+            <Button Grid.Row ="0" Grid.Column="1" Text="2" WidthRequest="64" HeightRequest="50" 
+            HorizontalOptions="Center" Clicked="Number_Clicked"></Button>
+            <Button Grid.Row ="0" Grid.Column="2" Text="3" WidthRequest="64" HeightRequest="50" 
+            HorizontalOptions="Center" Clicked="Number_Clicked"></Button>
+            <Label x:Name ="total1" Grid.Row ="0" Grid.Column="3" Text="Total" FontSize="16" HorizontalOptions="Center"/>
+
+
+
+
+            <Button Clicked="Number_Clicked" Grid.Row ="1" Grid.Column="0" Text="4" WidthRequest="70" 
+            HorizontalOptions="Center" HeightRequest="50"></Button>
+            <Button Clicked="Number_Clicked" Grid.Row ="1" Grid.Column="1" Text="5" WidthRequest="70" HeightRequest="50" 
+            HorizontalOptions="Center"></Button>
+            <Button Clicked="Number_Clicked" Grid.Row ="1" Grid.Column="2" Text="6" WidthRequest="70"  HeightRequest="50"
+            HorizontalOptions="Center"></Button>
+          
+            <Button Clicked="Buy_Clicked"  Text="Buy" WidthRequest="70" 
+            HeightRequest="100"
+            Grid.Row="1"  Grid.RowSpan ="2" Grid.Column="3" 
+            HorizontalOptions="Center"></Button>
+
+
+
+
+            <Button Clicked="Number_Clicked" Grid.Row ="2" Grid.Column="0" Text="7" WidthRequest="64" 
+            HorizontalOptions="Center" HeightRequest="50"></Button>
+            <Button Clicked="Number_Clicked" Grid.Row ="2" Grid.Column="1" Text="8" WidthRequest="64" HeightRequest="50" 
+            HorizontalOptions="Center"></Button>
+            <Button Clicked="Number_Clicked" Grid.Row ="2" Grid.Column="2" Text="9" WidthRequest="64"  HeightRequest="50"
+            HorizontalOptions="Center"></Button>
+            <Button Clicked="Number_Clicked" Grid.Row ="3" Grid.Column="1" Text="0" WidthRequest="64"  HeightRequest="50"
+            HorizontalOptions="Center" VerticalOptions="EndAndExpand"> </Button>
+      <Label Text="Quantity"
+      x:Name="quantity1"  FontSize="20" HorizontalTextAlignment="Start" Grid.Row ="4" Grid.Column="0" Grid.ColumnSpan="2" ></Label>
+
+      <ListView x:Name="products" Grid.Column ="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Row ="5" ItemSelected= "mylist_ItemSelected">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+
+            <ViewCell>
+              <StackLayout Orientation ="Horizontal" Padding ="1">
+                <StackLayout HorizontalOptions = "StartAndExpand">
+                  <Label x:Name="itemname" Text ="{Binding name}" TextColor="Blue"/>
+                  <Label Text ="{Binding price}" TextColor="Green"/>
+
+                </StackLayout>
+                <Label Text ="{Binding qty}" TextColor="Red"/>
+              </StackLayout>
+            </ViewCell>
+
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+
+    </Grid>
+
+
+
+
+
+
+
+  </StackLayout>
+</ContentPage>

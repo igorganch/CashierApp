@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DisplayHistroyItemPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="History"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+
+    <StackLayout>
+        
+        <Label x:Name="name" TextColor="Green" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Grid ColumnSpacing="0">
+            <Label x:Name ="type" Text="Quantity: "
+       Grid.Row ="0" Grid.Column="0" HorizontalOptions="Center"/>
+            <Label x:Name="quantity" Grid.Column="1" TextColor="Green" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Grid.Row="0"/>
+
+            <Label x:Name ="type1" Text="Total: "
+      Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+            <Label x:Name="price" Grid.Column="1" Grid.Row="1" TextColor="Green" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+        <Label x:Name="date" TextColor="Green" HorizontalOptions="Center" VerticalOptions="Center"/>
+    
+
+
+    </StackLayout>
+
+
+</ContentPage>

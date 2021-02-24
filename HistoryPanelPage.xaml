@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.HistoryPanelPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="History"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ListView x:Name="products"  ItemSelected= "mylist_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+
+                <ViewCell>
+                    <StackLayout Orientation ="Horizontal" Padding ="1">
+                        <StackLayout HorizontalOptions = "StartAndExpand">
+                            <Label x:Name="itemname" Text ="{Binding name}" TextColor="Blue"/>
+                        </StackLayout>
+                        <Label Text ="{Binding qty}" TextColor="Red"/>
+                    </StackLayout>
+                </ViewCell>
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

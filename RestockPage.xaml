@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.RestockPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    <StackLayout>
+        <Entry x:Name="entry" Text="Enter Quantity" MaxLength="20" />
+
+        <Grid x:Name="container8" Padding ="0,0,50,0" RowSpacing ="0" ColumnSpacing="120"  >
+            <Button  Clicked ="Restock_Clicked" Grid.Row ="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Restock" WidthRequest="110" HeightRequest="50" 
+            HorizontalOptions="Start" ></Button>
+            <Button Clicked ="Cancel_Clicked" Grid.Row ="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Cancel" WidthRequest="110" HeightRequest="50" 
+            HorizontalOptions="End" ></Button>
+
+
+            <ListView  HorizontalOptions="StartAndExpand"  x:Name="products" Grid.Column ="0" Grid.ColumnSpan="4" Grid.RowSpan="4" Grid.Row ="1"  ItemSelected= "mylist_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <StackLayout Orientation ="Horizontal" Padding ="1">
+                                <StackLayout HorizontalOptions = "StartAndExpand">
+                                    <Label x:Name="itemname" Text ="{Binding name}" TextColor="Blue"/>
+
+
+                                </StackLayout>
+                                <Label Text ="{Binding qty}" TextColor="Red"/>
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+      
+        </Grid>
+
+        
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
