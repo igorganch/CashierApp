@@ -6,3 +6,4 @@
 # Functionality 
 ## Screenshots of the app running
 ![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/AddingAProductToCart.PNG)
+![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/History1.PNG)
