@@ -10,4 +10,4 @@
 ## Restock
 ![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/Restock3.PNG)
 ## History 
-
+![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/History3.PNG)
