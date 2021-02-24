@@ -7,3 +7,7 @@
 ## Screenshots of the app running
 ![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/AddingAProductToCart.PNG)
 ![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/History1.PNG)
+## Restock
+![SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/Restock3.PNG)
+## History 
+[SCREENSHOT](https://github.com/igorganch/CashierApp/blob/main/History3.PNG)
