@@ -1,5 +1,5 @@
 # Cashier App
- A mobile app that acts as a cash register which keeps track of items sold and also allows the user to restock items. Developed with Xamarin.Forms as the front end and C# as the backend. This project Uses concepts of OOP combined with data structures.
+ A mobile app that acts as a cash register which keeps track of items sold and also allows the user to restock items. Developed with Xamarin.Forms as the front end. This project Uses concepts of OOP combined with data structures.
 # How to start 
 1. Download the git repository to your desktop
 2. Open with Visual Studio 2017 and an emulator should pop up when you have clicked the run button
